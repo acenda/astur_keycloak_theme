@@ -4,7 +4,7 @@
             <div class="${properties.kcInputWrapperClass!}">
                 ${msg("termsTitle")}
                 <div id="kc-registration-terms-text">
-                      <TextArea style="width: 100%" rows="15"> ${kcSanitize(msg("termsText"))?no_esc} </TextArea>
+                    <div  style="width: 100%, overflow-y: scroll, height: 350px, background-color: #000716"> ${kcSanitize(msg("termsText"))?no_esc} </div>               
                 </div>
             </div>
         </div>

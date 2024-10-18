@@ -155,6 +155,20 @@ body {
 }
 
 /* default - IE compatibility */
+.pf-m-danger {
+    color: #FFFFFF;
+    background-color: #0066CC;
+    background-color: var(--pf-global--primary-color--100);
+}
+
+/* default - IE compatibility */
+.pf-m-danger:hover {
+    background-color: #004080;
+    background-color: var(--pf-global--primary-color--200);
+}
+
+
+/* default - IE compatibility */
 .pf-c-button.pf-m-control {
     border: solid 1px;
     border: solid var(--pf-global--BorderWidth--sm);
@@ -729,4 +743,15 @@ h1#kc-page-title {
 
 .pf-c-button.pf-m-primary:hover {
     background-color: #0E8074;
+}
+.pf-c-button.pf-m-danger {
+    height: 3rem;
+    color: var(--pf-c-button--m-primary--Color);
+    font-weight: bold;
+    text-shadow: 0 .0625rem .125rem rgba(0,0,0,.5);
+    background-color: #b80000;
+}
+
+.pf-c-button.pf-m-danger:hover {
+    background-color: #800000;
 }

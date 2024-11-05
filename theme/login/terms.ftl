@@ -4,7 +4,7 @@
         ${msg("termsTitle")}
     <#elseif section = "form">
     <div id="kc-terms-text">
-         <div style="overflow-y: scroll; height: 450px; padding: 10px; background-color: #000716;"> ${kcSanitize(msg("termsText"))?no_esc} </div> 
+         <div style="overflow-y: scroll; height: 450px; padding: 10px; background-color: #000716;"> ${msg("termsText")?no_esc} </div> 
     </div>
     <form class="form-actions" action="${url.loginAction}" method="POST">
         <input class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonLargeClass!}" name="accept" id="kc-accept" type="submit" value="${msg("doAccept")}"/>

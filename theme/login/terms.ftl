@@ -3,6 +3,28 @@
     <#if section = "header">
         ${msg("termsTitle")}
     <#elseif section = "form">
+    <style>
+            ul {
+                list-style: inside
+            }
+
+            .toc p {
+                color: #a0aec0 !important
+            }
+
+            .card-pf {
+                max-width: 720px
+            }
+
+            #kc-terms-text {
+                margin-bottom: 30px
+            }
+
+            .pf-c-button.pf-m-danger {
+                margin-left: 10px
+            }
+
+    </style>
     <div id="kc-terms-text">
          <div style="overflow-y: scroll; height: 450px; padding: 10px; background-color: #000716;"> ${msg("termsText")?no_esc} </div> 
     </div>

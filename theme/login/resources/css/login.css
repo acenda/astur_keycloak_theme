@@ -157,14 +157,12 @@ body {
 /* default - IE compatibility */
 .pf-m-danger {
     color: #FFFFFF;
-    background-color: #0066CC;
-    background-color: var(--pf-global--primary-color--100);
+
 }
 
 /* default - IE compatibility */
 .pf-m-danger:hover {
-    background-color: #004080;
-    background-color: var(--pf-global--primary-color--200);
+
 }
 
 

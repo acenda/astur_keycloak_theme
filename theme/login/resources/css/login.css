@@ -158,10 +158,12 @@ body {
 .pf-m-danger {
     color: #FFFFFF;
 
+    background-color: transparent;
 }
 
 /* default - IE compatibility */
 .pf-m-danger:hover {
+    background-color: transparent;
 
 }
 

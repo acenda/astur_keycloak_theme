@@ -26,7 +26,8 @@
 
     </style>
     <div id="kc-terms-text">
-         <div style="overflow-y: scroll; height: 450px; padding: 10px; background-color: #000716;"> ${msg("termsText")?no_esc} </div> 
+         <div style="overflow-y: scroll; height: 450px; padding: 10px; background-color: #000716; scrollbar-color: #72767B #000716; scrollbar-width: thin;
+         "> ${msg("termsText")?no_esc} </div> 
     </div>
     <form class="form-actions" action="${url.loginAction}" method="POST">
         <input class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonLargeClass!}" name="accept" id="kc-accept" type="submit" value="${msg("doAccept")}"/>

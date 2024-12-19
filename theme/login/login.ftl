@@ -101,7 +101,7 @@
                                     type="button" href="${p.loginUrl}">
       
                                     <span class="${properties.kcFormSocialAccountNameClass!}">${p.displayName!}</span>
-                                </#if>
+            
                             </a>
                         </li>
                     </#list>

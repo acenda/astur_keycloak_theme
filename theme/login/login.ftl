@@ -96,12 +96,15 @@
 
                 <ul class="${properties.kcFormSocialAccountListClass!} <#if social.providers?size gt 3>${properties.kcFormSocialAccountListGridClass!}</#if>">
                     <#list social.providers as p>
-                        <li>
-                            <a id="social-${p.alias}" class="${properties.kcFormSocialAccountListButtonClass!} <#if social.providers?size gt 3>${properties.kcFormSocialAccountGridItem!}</#if>"
+                        <li style="width: 100%">
+                            <a id="social-${p.alias}" class="${properties.kcFormSocialAccountListButtonClass!} style="width: 100%" <#if social.providers?size gt 3>${properties.kcFormSocialAccountGridItem!}</#if>"
                                     type="button" href="${p.loginUrl}">
-      
+                                <#if p.iconClasses?has_content>
+                                    <i class="${properties.kcCommonLogoIdP!} ${p.iconClasses!}" aria-hidden="true"></i>
+                                    <span class="${properties.kcFormSocialAccountNameClass!} kc-social-icon-text">${p.displayName!}</span>
+                                <#else>
                                     <span class="${properties.kcFormSocialAccountNameClass!}">${p.displayName!}</span>
-            
+                                </#if>
                             </a>
                         </li>
                     </#list>
